@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .badge {
+    background-color: white;
+    border-radius: 10px;
+    padding: 500px;
+  }
+  /* ... */
+}
+
+.banner-home {
+  @apply px-5  pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
+  background-color: #ffeed9;
+  background:  url("assets/background.gif") no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.container-fluid {
+  border-style: inside;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 5%;
+  border-radius: 5px;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.banner-2 {
+  @apply px-5  pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
+  background-color: #ffddbf;
+}
+.bg-yellowis {
+  background-color: #ffddbf;
+}
+.hello-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white
+}
+.menu-button {
+  @apply bg-zinc-700 rounded-lg border-8 border-transparent 3xl:text-2xl 2xl:text-2xl xl:text-xl lg:text-xl md:text-xl  font-bold font-work_sans hover:text-slate-300;
+  color: white;
+}
+
+.submit-button {
+  @apply border-gray-800 border-white 3xl:text-xl 2xl:text-xl lg:text-xl md:text-xl text-xs py-2 px-4  lg:py-4 lg:px-8 rounded-2xl font-work_sans font-semibold;
+}
+
+.heading3 {
+  color: #403930;
+  @apply md:text-5xl text-xl font-bold font-work_sans tracking-wide;
+}
+
+.project-title {
+  @apply text-gray-700 text-3xl md:text-4xl font-work_sans tracking-wide font-bold;
+}
+
+.card {
+  @apply bg-white rounded-2xl md:flex place-items-center my-20 shadow-md;
+}
+.card-image {
+  @apply md:w-1/2 md:rounded-r-2xl md:rounded-l-none rounded-b-2xl flex;
+}
+
+@layer utilities {
+  .h-850 {
+    height: 900px;
+  }
+}
+
+/* Timeline holder */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: ' ';
+  background: black;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+li.timeline-item {
+  margin: 20px 0;
+  margin-left: 10px;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: ' ';
+  background: black;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.tech-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.tech-list-item {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.tech-list-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.right-list {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.right-list-item {
+  margin-bottom: 10px;
+  font-size: .95rem;
+}
+
+.text-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.skill-progress {
+  height: 0.5rem;
+}
+
+.progress-bar {
+  background-color: black;
+}
