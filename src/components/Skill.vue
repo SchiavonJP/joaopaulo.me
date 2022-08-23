@@ -2,10 +2,10 @@
 <section class="mb-5">
     <h3 class="text-sky-800 font-bold text-2xl tracking-wider m-8" style="margin-left: 10px;">Skills</h3>
     <b class="text-black-800 font-bold text-md tracking-wider" style="margin-left: 10px;">Technical</b>
-    <ul class="grid grid-flow-row-dense grid-cols-4 grid-rows-3  m-4">
-        <li class="col-span-3 2xl:col-span-1" v-for="(skill,index) in skillInfo" :key="index">
+    <ul class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 m-4 md:grid-rows-2 md:m-0 sm:grid-cols-4 sm:grid-rows-3">
+        <li class="col-span-2 xl:col-span-1 md:col-span-2 sm:col-span-1" v-for="(skill,index) in skillInfo" :key="index">
             <div>
-                <ve-progress :size="100" :progress="skill.rate">
+                <ve-progress legend-class="text-sky-800 text-xs" :size="75" :progress="skill.rate">
                     <span slot="legend">{{skill.name}}</span>
                     <p slot="legend-caption">{{skill.rate}}%</p>
                 </ve-progress>

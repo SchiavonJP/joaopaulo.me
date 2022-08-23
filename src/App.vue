@@ -51,7 +51,7 @@
             👋 Hey,
           </h3>
           <h1
-            class="3xl:text-8xl 2xl:text-7xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-3xl text-xl font-Eczar font-bold leading-tight text-white-700"
+            class="3xl:text-9xl 2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-3xl text-2xl font-Eczar font-bold leading-tight text-white-700"
           >
             It's
             <a
@@ -85,15 +85,9 @@
 
   <div class="banner-2 md:flex md:justify-evenly" id="resume">
     <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
-      <h4 class="project-title item">Who I am?</h4>
+      <h4 class="project-title item">Who am I?</h4>
       <p class="font-work_sans">
-        I am João Paulo Schiavon from Florianópolis, Brazil. I've been working in an Brazilian Companies
-        as a Data Scientist for the past 3 years.
-        <br />
-        I got experience in entire pipelines of data science projects,
-        from data processing/colleting to data models. I've experience with Python, 
-        AWS enviroment tools and now I'm learning GO. Besides
-        developing, I like to play sports, cook all kind of stuffs and go to beach.
+        {{ data.generalInfo.whoAmI }}
       </p>
       <Education :educationInfo="data.educationInfo" />
       <Skill :skillInfo="data.skillInfo" :otherSkillInfo="data.otherSkillInfo" :proSkillInfo="data.proSkillInfo" />
