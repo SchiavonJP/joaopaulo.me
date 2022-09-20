@@ -1,11 +1,6 @@
 const generalInfo =
 {
-    whoAmI: `I am João Paulo Schiavon from Florianópolis, Brazil. I've been working in an Brazilian Companies
-    as a Data Scientist for the past 3 years.
-    I got experience in entire pipelines of data science projects,
-    from data processing/colleting to data models. I've experience with Python, 
-    AWS enviroment tools and now I'm learning GO. Besides
-    developing, I like to play sports, cook all kind of stuffs and go to the beach.`
+    whoAmI: `I am João Paulo Schiavon from Florianópolis, Brazil. I've been working in a Brazilian Company as a Data Scientist for the past 3 years. I got experience in entire pipelines of data science projects, from data processing/collecting to data models. I've experience with Python and AWS environment tools, and now I'm learning GO. Besides developing, I like to play sports, cook, and go to the beach.`
 }
 
 
