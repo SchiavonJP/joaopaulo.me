@@ -1,0 +1,89 @@
+---
+import SkillsList from "~/components/skills-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { skillsItem } from "~/types";
+
+const frameworks: Array<SkillsItem> = [
+  {
+    title: "FastAPI",
+    icon: "frameworks/fastapi",
+    url: "https://fastapi.tiangolo.com/",
+  },
+  {
+    title: "Serverless",
+    icon: "frameworks/serverless",
+    url: "https://www.serverless.com/",
+  },
+  {
+    title: "Elastic Search",
+    icon: "frameworks/elastic",
+    url: "https://www.elastic.co/",
+  },
+  {
+    title: "DVC",
+    icon: "frameworks/dvc",
+    url: "https://dvc.org/",
+  },
+  {
+    title: "Vue",
+    icon: "frameworks/vuejs",
+    url: "https://vuejs.org/",
+  },
+  {
+    title: "Django",
+    icon: "frameworks/django",
+    url: "https://www.djangoproject.com/",
+  },
+];
+
+const platforms: Array<CompatibilityItem> = [
+  {
+    title: "GitHub",
+    icon: "fa-brands:github",
+    url: "https://pages.github.com/",
+  },
+  {
+    title: "GitLab",
+    icon: "platforms/gitlab",
+    url: "https://docs.gitlab.com/ee/user/project/pages/",
+  },
+  {
+    title: "AWS",
+    icon: "platforms/amazon",
+    url: "https://www.aws.com/",
+  },
+  {
+    title: "Vercel",
+    icon: "platforms/vercel",
+    url: "https://vercel.com/",
+  },
+  {
+    title: "Airflow",
+    icon: "platforms/airflow",
+    url: "https://airflow.apache.org/",
+  },
+  {
+    title: "RabbitMQ",
+    icon: "platforms/rabbitmq",
+    url: "https://www.rabbitmq.com/",
+  },
+];
+---
+
+<ContentSection title="Skills" id="skills">
+  <Fragment slot="lead">
+    <span class="text-primary">Try</span> again,</br>
+    <span class="text-primary">fail</span> again,</br>
+    fail <span class="text-primary">better</span>.
+  </Fragment>
+  <SkillsList
+    items={frameworks}
+    title="Frameworks"
+    url="https://docs.astro.build/core-concepts/framework-components/"
+  />
+  <SkillsList
+    items={platforms}
+    title="Platforms"
+    url="https://docs.astro.build/guides/deploy/"
+  />
+</ContentSection>

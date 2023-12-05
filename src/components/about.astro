@@ -1,0 +1,45 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const about: Array<FeatureItem> = [
+  {
+    title: "Enjoy nature",
+    description:
+      "I absolutely adore immersing myself in the beauty of nature, embarking on thrilling treks for amazing landscapes, taking a dip in natural waterfalls, and experiencing a good camping.",
+    icon: "mdi:forest",
+  },
+  {
+    title: "Exercise",
+    description:
+      "Since I was a child, I have been an enthusiastic fan of sports and exercise. I find joy in the benefits of physical activity and think sports are great for staying motivated.",
+    icon: "mdi:run-fast",
+  },
+  {
+    title: "Cooking",
+    description:
+      "The joy of cooking is a journey of discovery, a source of connection, and a celebration of life's simple pleasures.",
+    icon: "mdi:chef-hat",
+  },
+];
+---
+
+<ContentSection title="About me" id="about">
+  <Fragment slot="lead">
+    What keeps me <span class="text-primary">motivated</span> to <span class="text-primary">get up</span> in the morning.
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      about.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="h-16 w-16 rounded-full border-2 border-current p-3">
+            <Icon name={icon} />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import ContentSection from "~/components/content-section.astro";
+import ProjectsCard from "~/components/projects-card.astro";
+
+const featuredSites = await getCollection(
+  "projects",
+  ({ data }) => "featured" in data,
+);
+const orderedSites = featuredSites.sort(
+  (a, b) => a.data.featured! - b.data.featured!,
+);
+---
+
+<ContentSection title="Projects" id="projects">
+  <Fragment slot="lead">
+    it's not about being <span class="text-primary">invincible</span>,</br>
+    It's about being <span class="text-primary">unstoppable</span>.
+  </Fragment>
+  <div class="max-w-6xl space-y-2">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {orderedSites.map((site) => <ProjectsCard site={site} />)}
+    </div>
+    <p class="text-right text-sm">
+      <a class="text-primary" href="https://astro.build/projects/">
+        ...and more &rarr;
+      </a>
+    </p>
+  </div>
+</ContentSection>

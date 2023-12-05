@@ -1,22 +1,33 @@
 {
-  "name": "schiva-blog",
-  "private": true,
+  "name": "astro-landing-page",
+  "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.2.25",
-    "vue-ellipse-progress": "^2.1.1",
-    "vue3-smooth-scroll": "^0.8.1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write **/*.astro .",
+    "clean": "rimraf dist .astro node_modules"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.2.0",
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.8",
-    "tailwindcss": "^3.0.23",
-    "vite": "^2.8.0"
+    "@astrojs/tailwind": "^5.0.2",
+    "@types/micromodal": "^0.3.3",
+    "astro": "^3.3.0",
+    "astro-icon": "^0.8.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "rimraf": "^5.0.5",
+    "tailwindcss-fluid-type": "^2.0.3"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.0.13",
+    "micromodal": "^0.4.10",
+    "sharp": "^0.32.6",
+    "tailwindcss": "^3.3.3",
+    "tiny-invariant": "^1.3.1"
   }
 }
