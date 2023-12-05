@@ -1,0 +1,82 @@
+---
+import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+import foxImage from "~/assets/fox-2.png";
+import HeroImage from "~/components/hero-image.astro";
+import Starfield from "~/components/starfield.astro";
+import GitHubCorner from "./github-corner.astro";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+---
+
+<section class="relative h-full bg-black">
+  <Starfield />
+  <GitHubCorner />
+  <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
+    <HeroImage />
+  </div>
+  <div class="relative grid h-full place-items-center sm:grid-cols-2">
+    <h2
+      class="flex flex-col gap-2 self-end sm:gap-12 sm:self-auto sm:justify-self-end"
+    >
+      <Icon name="hello" class="h-40 text-white md:h-48" />
+      <div
+        class="gradient-text text-center font-extrabold tracking-tighter text-6xl"
+      >
+        I'm João <a class="text-primary hover:underline" href="https://www.linkedin.com/in/joao-paulo-schiavon" target="_blank">'Schiva'</a> Schiavon
+      </div>
+    </h2>
+    <div
+      id="fox"
+      class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
+    >
+      <Image
+        class="h-full w-full object-cover"
+        src={foxImage}
+        widths={widths}
+        sizes={sizes}
+        loading="eager"
+        alt="A floating fox"
+      />
+    </div>
+  </div>
+</section>
+
+<noscript>
+  <style>
+    #splash-bg-fallback {
+      display: block;
+    }
+  </style>
+</noscript>
+
+<style>
+  @keyframes float {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 30px, 0);
+    }
+  }
+
+  #astronaut {
+    animation: float linear 2.5s infinite alternate;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #astronaut {
+      @apply animate-none;
+    }
+
+    :global(#starfield) {
+      @apply hidden;
+    }
+
+    #splash-bg-fallback {
+      @apply block;
+    }
+  }
+</style>
