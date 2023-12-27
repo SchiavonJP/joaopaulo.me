@@ -65,7 +65,7 @@
 
           <div class="md:flex gap-1 md:gap-10">
             <button class="text-white bg-gray-800 submit-button hidden md:block">
-              <a href="#resume" v-smooth-scroll>
+              <a href="/resume" v-smooth-scroll>
                 View My Resume
               </a>
             </button>
@@ -114,10 +114,10 @@
   </div>
 </template>
 <script>
-  import Experience from './components/Experience.vue'
   import Education from './components/Education.vue'
-  import Skill from './components/Skill.vue'
-  import Social from './components/Social.vue'
+import Experience from './components/Experience.vue'
+import Skill from './components/Skill.vue'
+import Social from './components/Social.vue'
 
   import data from './data/data'
   export default {

@@ -1,7 +1,6 @@
 ---
-import SkillsList from "~/components/skills-list.astro";
 import ContentSection from "~/components/content-section.astro";
-import type { skillsItem } from "~/types";
+import SkillsList from "~/components/skills-list.astro";
 
 const frameworks: Array<SkillsItem> = [
   {
@@ -79,11 +78,11 @@ const platforms: Array<CompatibilityItem> = [
   <SkillsList
     items={frameworks}
     title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
+    url="#"
   />
   <SkillsList
     items={platforms}
     title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
+    url="#"
   />
 </ContentSection>
