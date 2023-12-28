@@ -1,58 +1,66 @@
 ---
-title: Richard Hendriks - Resume
-description: Resume about Richard Hendriks, CEO of Pied Piper.
+title: João Paulo Schiavon - Resume
+description: Resume about João Paulo Schiavon, Data Scientist.
 layout: ../layouts/Minimalist.astro
 pdfLink: resume.pdf
 ---
 
-# Richard Hendriks
+# João Paulo Schiavon
 
-**Programmer**
+**Software Engineer/ Data Scientist**
 
-San Francisco, USA | richard.hendriks@gmail.com | http://richardhendricks.com
+Florianópolis, BR | hey@joaopaulo.me | https://joaopaulo.me
 
-Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!
+A dedicated and curious Software Engineer with a passion for unraveling the intricacies of data to drive impactful solutions with a robust four-year tenure in the Brazilian tech industry. My journey has been steeped in the intricacies of data science projects, encompassing the complete spectrum from data processing and collection to the development of comprehensive data models. Proficient in Python and adept at navigating the AWS environment, my expertise has been honed through hands-on experience and a dedication to technological innovation.
 
 ## Work Experience
 
-### [Google](https://www.google.com/)
+### [Compasso.UOL - Florianópolis/Brazil](https://compass.uol/en/home/)
 
-#### Senior Software Engineer | Oct 2022 - Current
+#### DATA SCIENTIST | Nov 2023 - Current
 
-Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.
+- Spearheaded the analysis of customer data, extracting actionable insights that directly influenced strategic business decisions.
+- Employed a clustering model to identify patterns within customer datasets.
+- Leveraged data visualization techniques to present complex information, improving team comprehension and accelerating decision-making processes.
 
-#### Software Engineer | Aug 2018 - Oct 2022
+### [Softplan - Florianópolis/Brazil](https://www.softplan.com.br/)
 
-Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.
+#### DATA SCIENTIST | Nov 2020 - Nov 2023
 
-### [Pied Piper](http://piedpiper.com/)
+- Created a powerful ETL pipeline designed to preprocess raw documents, capable of handling over 1 million documents daily, utilizing AWS Python Lambda function, SQS, and S3
+- Started implementing different approaches to summarize documents using the LLM model, which will help minimize data processing and enhance data quality.
+- Designed a robust pipeline capable of classifying over 1.5 million documents daily using FastAPI(Python), RabbitMQ, and Celery.
+- Develop various NLP models for Brazil's judicial system to perform tasks like document classification, NER, relation extraction, etc. Assisting with complicated and lengthy processes.
+- Created CI/CD pipeline with DVC for versioning dataset and models to streamline training and deployment, improving the efficiency of model development and
+enhancement.
+- Developed an annotation platform based on a fork of Doccano that allowed users to create, share and develop ElasticSearch queries as document classifiers using percolation queries. This platform helped non-technical users to develop more than 150 document classifiers. The project has a frontend in Vue.js, a backend in Django(Python), and a PostgreSQL database.
 
-#### CEO/President | Dec 2013 - Dec 2014
+### [Finch Soluções - Bauru/Brazil](https://finchsolucoes.com.br/)
 
-Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.
+#### DATA SCIENTIST | Mar 2020 – Nov 2020
 
-- Build an algorithm for artist to detect if their music was violating copy right infringement laws
-- Successfully won Techcrunch Disrupt
-- Optimized an algorithm that holds the current world record for Weisman Scores
+- Streamlined document processing and model training by implementing an Airflow pipeline that schedules weekly jobs and updates input data.
+- Develop an integrated NLP model for classifying clusters of complex legacy documents, enabling clients to efficiently organize and observe historical data.
+- Streamlined NER tasks by building a multiprocess jobs Ray (Python), resulting in 25% faster processing time.
 
-## Projects
+### [Nindoo - São Paulo/Brazil]()
 
-### [Sillicon Valley](<https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)>)
+#### PYTHON DEVELOPER | Jun 2019 – Mar 2020
 
-#### Video Compression for 3D Media
-
-#### Founder | Oct 2014
-
-Innovative middle-out compression algorithm that changes the way we store data.
+- Spearheaded the extraction of valuable data from diverse government portals by deploying advanced web crawlers.
+- Leveraged Selenium and Scrapy (Python) to adeptly and efficiently extract data from a range of portals
+- Orchestrated the project using RabbitMQ for streamlined coordination and Celery for the effective distribution of tasks.
 
 ## Languages
 
-| English        | English     |
-| -------------- | ----------- |
-| Native speaker | Proficiency |
+| Language       | Proficiency    |
+| -------------- | -----------    |
+| Portuguese     | Native speaker |
+| English        | Advanced       |
+| Japanese       | Basic          |
 
 ## Education
 
-### University of Oklahoma
+### Universidade Estadual Paulista Júlio de Mesquita Filho
 
-#### Bachelor, Information Technology | Jun 2011 - Jan 2014
+#### Bachelor, Computer Science | May 2015 - Jun 2019
