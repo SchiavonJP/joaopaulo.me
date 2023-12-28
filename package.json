@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "npx playwright install",
+    "postinstall": "npx playwright install && npx playwright install-deps",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "npm run generate-pdf:ci && astro build",
