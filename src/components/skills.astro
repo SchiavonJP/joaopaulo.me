@@ -1,6 +1,7 @@
 ---
 import ContentSection from "~/components/content-section.astro";
 import SkillsList from "~/components/skills-list.astro";
+import type { SkillsItem } from "~/types";
 
 const frameworks: Array<SkillsItem> = [
   {
@@ -35,7 +36,7 @@ const frameworks: Array<SkillsItem> = [
   },
 ];
 
-const platforms: Array<CompatibilityItem> = [
+const platforms: Array<SkillsItem> = [
   {
     title: "GitHub",
     icon: "fa-brands:github",
