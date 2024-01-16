@@ -13,7 +13,7 @@ const navItems: Array<NavItem> = [
 
 <header
   id="page-header"
-  class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
+  class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 header-div"
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
     <h1 class="sr-only">Astro</h1>
@@ -124,6 +124,9 @@ import invariant from "tiny-invariant";
   <style>
     #open-nav-button {
       display: none;
+    }
+    .header-div {
+      color: var(--theme-text-color);
     }
   </style>
 </noscript>
