@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
+    "@astrojs/netlify": "^5.2.0",
     "@fontsource-variable/inter": "^5.0.13",
     "micromodal": "^0.4.10",
     "sharp": "^0.32.6",
